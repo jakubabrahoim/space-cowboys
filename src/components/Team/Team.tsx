@@ -1,8 +1,19 @@
+import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
+import { IconContext } from 'react-icons';
+
 import MemberCard from './MemberCard';
 
 let profilePicture = require('../../assets/profilePicture.png');
 
 function Team() {
+    
+    function verticalScroll(direction: string): void {
+        let memberContainer: HTMLElement = document.getElementById('memberCards') as HTMLElement;
+
+        if(direction === 'left') memberContainer.scrollBy({left: -450, top: 0, behavior: 'smooth'});
+        else memberContainer.scrollBy({left: 450, top: 0, behavior: 'smooth'});
+    }
+    
     return (
         <section className='teamBg'>
             <div className='teamWrapper'>
@@ -13,7 +24,7 @@ function Team() {
                         Click on the pictures to get some more information!
                     </p>
                 </div>
-                <div className='flex flex-row overflow-x-auto lg:grid lg:grid-cols-12 lg:mx-56 justify-items-center mt-24 lg:mt-12'>
+                <div id='memberCards' className='flex flex-row overflow-x-auto lg:grid lg:grid-cols-12 lg:mx-56 justify-items-center mt-24 lg:mt-12'>
                     <MemberCard
                         heading={<>RICHIE <br /> FARHEM</>}
                         text={
@@ -84,6 +95,28 @@ function Team() {
                         memberName='AL'
                         css='lg:col-span-6 lg:justify-self-start mr-16 ml-4 lg:mx-6 rounded-lg h-[206px] w-[400px] hover:cursor-pointer'
                     />
+                </div>
+                <div className='flex flex-row w-screen mt-4 sm:hidden'>
+                    <div className='flex basis-1/2 items-center justify-start h-12'>
+                        <button 
+                            className='border border-white text-white rounded-full w-12 h-12 ml-6'
+                            onClick={() => verticalScroll('left')}
+                        >
+                            <IconContext.Provider value={{ className: 'inline text-white font-bold w-8 h-8' }}>
+                                <AiOutlineLeft />
+                            </IconContext.Provider>
+                        </button>
+                    </div>
+                    <div className='flex basis-1/2 items-center justify-end h-12'>
+                        <button 
+                            className='border border-white text-white rounded-full w-12 h-12 mr-6'
+                            onClick={() => verticalScroll('right')}
+                        >
+                            <IconContext.Provider value={{ className: 'inline text-white font-bold w-8 h-8' }}>
+                                <AiOutlineRight />
+                            </IconContext.Provider>
+                        </button>   
+                    </div>
                 </div>
             </div>
         </section>
