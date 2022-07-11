@@ -4,11 +4,16 @@
 
 
 .landingBg {
-    @apply bg-[url('../src/assets/backgroundImage.png')] bg-no-repeat bg-cover h-screen;
+    @apply bg-[url('../src/assets/landingBg.png')] bg-no-repeat bg-cover h-screen;
 }
 
 .teamBg {
     @apply bg-[url('../src/assets/teamBg.png')] bg-no-repeat bg-cover h-screen;
+}
+
+.landingWrapper {
+    @apply h-screen flex flex-col justify-center items-center;
+    background: rgba(0, 0, 0, 0.2);
 }
 
 .factsCard {
@@ -25,4 +30,9 @@
 
 .factsIconWrapper {
     @apply rounded-full w-16 h-16 border border-black bg-yellow-400 flex flex-row items-center justify-center absolute top-[-32px] right-[153px];
+}
+
+.teamWrapper {
+    @apply h-screen;
+    background: rgba(0, 0, 0, 0.2);
 }

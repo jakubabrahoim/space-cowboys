@@ -31,7 +31,7 @@ function App() {
 
             {/* LANDING PAGE */}
             <section className='landingBg'>
-                <div className='h-screen flex flex-col justify-center items-center'>
+                <div className='landingWrapper'>
                     <h1 className='text-center text-5xl font-bold text text-white mb-4'>
                         HEY THERE, WE ARE <br/> SPACECOWBOY
                     </h1>
@@ -108,28 +108,30 @@ function App() {
 
             {/* TEAM PAGE */}
             <section className='teamBg'>
-                <div className='flex flex-col items-center'>
-                    <h2 className='text-3xl font-bold text-white mt-12'>THE TEAM</h2>
-                    <p className='text-gray-100 text-center mt-4'>
-                        Yep, that's us. Six fine fellows, eager to get on the next adventure. <br/>
-                        Click on the pictures to get some more information!
-                    </p>
-                </div>
-                <div className='grid grid-cols-12 mx-56 justify-items-center mt-12'>
-                    <div className='col-span-4 border'>
-                        Col
+                <div className='teamWrapper'>
+                    <div className='flex flex-col items-center'>
+                        <h2 className='text-3xl font-bold text-white mt-12'>THE TEAM</h2>
+                        <p className='text-gray-100 text-center mt-4'>
+                            Yep, that's us. Six fine fellows, eager to get on the next adventure. <br/>
+                            Click on the pictures to get some more information!
+                        </p>
                     </div>
-                    <div className='col-span-4 border'>
-                        Col
-                    </div>
-                    <div className='col-span-4 border'>
-                        Col
-                    </div>
-                    <div className='col-span-6 border'>
-                        Col
-                    </div>
-                    <div className='col-span-6 border'>
-                        Col
+                    <div className='grid grid-cols-12 mx-56 justify-items-center mt-12'>
+                        <div className='col-span-4 border'>
+                            Col
+                        </div>
+                        <div className='col-span-4 border'>
+                            Col
+                        </div>
+                        <div className='col-span-4 border'>
+                            Col
+                        </div>
+                        <div className='col-span-6 border'>
+                            Col
+                        </div>
+                        <div className='col-span-6 border'>
+                            Col
+                        </div>
                     </div>
                 </div>
             </section>
