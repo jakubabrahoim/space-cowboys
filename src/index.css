@@ -22,7 +22,7 @@
 /* Facts section */
 
 .factsCard {
-    @apply border border-gray-200 bg-white rounded-md drop-shadow-2xl h-72 w-[370px] mx-6 sm:my-6 relative;
+    @apply border border-gray-200 bg-white rounded-md drop-shadow-2xl h-72 w-[370px] mx-6 my-6 sm:my-0 relative;
     @apply hover:bg-yellow-100 duration-300 ease-in hover:ease-out;
 }
 
@@ -46,7 +46,7 @@
 }
 
 .profileCardRow1 {
-    @apply col-span-4 rounded-lg h-[206px] w-[400px] mb-12 mx-6 hover:cursor-pointer;
+    @apply col-span-1 lg:col-span-4 rounded-lg h-[206px] w-[400px] mb-12 mx-6 hover:cursor-pointer;
 }
 
 .cardContentWrapper {

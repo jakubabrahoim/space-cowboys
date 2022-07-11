@@ -13,7 +13,7 @@ function Team() {
                         Click on the pictures to get some more information!
                     </p>
                 </div>
-                <div className='grid grid-cols-12 mx-56 justify-items-center mt-12'>
+                <div className='grid grid-cols-6 lg:grid-cols-12 mx-56 justify-items-center mt-12'>
                     <MemberCard
                         heading={<>RICHIE <br /> FARHEM</>}
                         text={

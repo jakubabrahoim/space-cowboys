@@ -49,12 +49,12 @@ function Contact() {
         <section className='bg-gray-300 h-screen'>
             <div className='flex flex-col items-center h-9/10'>
                 <h2 className='text-3xl font-bold text-black mt-12'>SAY HELLO</h2>
-                <p className='text-gray-700 text-center mt-4'>
+                <p className='text-gray-700 text-center mt-4 px-6 md:px-0'>
                     Got some questions about us? Wanna do business with us? <br />
                     Or do you just want to send us your latest cat-content - there you go:
                 </p>
 
-                <form className='grid grid-cols-2 items-center justify-items-center mt-12' onSubmit={submitForm}>
+                <form className='grid grid-cols-1 md:grid-cols-2 items-center justify-items-center mt-12' onSubmit={submitForm}>
                     <div className='flex flex-col mx-4'>
                         <span id='firstNameLabel' hidden>First Name</span>
                         <span className='text-red-500 text-xs mb-2' hidden={formValidation.firstName === 'valid'}>First Name can contain only letters.</span>
@@ -100,11 +100,11 @@ function Contact() {
                         required
                     />
 
-                    <div className='col-span-2 mt-12'>
+                    <div className='col-span-1 md:col-span-2 mt-4 md:mt-12'>
                         <input
                             type='submit'
                             value='SEND THAT MAIL'
-                            className='font-bold text-black text-lg bg-yellow-300 rounded-md px-16 py-4 hover:cursor-pointer'
+                            className='font-bold text-black text-lg bg-yellow-300 rounded-md px-8 md:px-16 py-4 hover:cursor-pointer'
                         /> <br/>
                         <span className='text-xs font-bold text-green-500 px-16' hidden={formSubmitted === false}>Form submitted successfuly</span>
                     </div>
