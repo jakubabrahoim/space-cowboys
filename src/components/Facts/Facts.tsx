@@ -2,16 +2,16 @@ import Fact from './Fact';
 
 function Facts() {
     return (
-        <section className='bg-stone-100 h-[1000px] sm:h-screen'>
+        <section className='bg-stone-100 h-[1150px] sm:h-screen'>
             <div className='flex flex-col items-center'>
-                <h2 className='text-3xl font-bold text-black mt-12'>A FEW FACTS ABOUT US</h2>
-                <p className='text-gray-700 text-center mt-4'>
+                <h2 className='text-3xl font-bold text-black text-center px-4 sm:px-0 mt-12'>A FEW FACTS ABOUT US</h2>
+                <p className='text-gray-700 text-center px-4 sm:px-0 mt-4'>
                     Before you do business with us, <br />
                     you might want to know a little bit more about our company:
                 </p>
             </div>
 
-            <div className='flex flex-col lg:flex-row justify-center items-center h-[700px] lg:h-[500px] mt-20 lg:mt-0'>
+            <div className='flex flex-col lg:flex-row justify-center items-center h-[700px] lg:h-[500px] mt-32 lg:mt-0'>
                 <Fact
                     heading='WE ARE COWBOYS'
                     text={

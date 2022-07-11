@@ -13,7 +13,7 @@ function Team() {
                         Click on the pictures to get some more information!
                     </p>
                 </div>
-                <div className='grid grid-cols-6 lg:grid-cols-12 mx-56 justify-items-center mt-12'>
+                <div className='flex flex-row overflow-x-auto lg:grid lg:grid-cols-12 lg:mx-56 justify-items-center mt-24 lg:mt-12'>
                     <MemberCard
                         heading={<>RICHIE <br /> FARHEM</>}
                         text={
@@ -68,7 +68,7 @@ function Team() {
                         picture={profilePicture}
                         quote='I like apples.'
                         memberName='BERT'
-                        css='col-span-6 justify-self-end mx-6 rounded-lg h-[206px] w-[400px] hover:cursor-pointer'
+                        css='lg:col-span-6 lg:justify-self-end mr-16 ml-4 lg:mx-6 rounded-lg h-[206px] w-[400px] hover:cursor-pointer'
                     />
                     <MemberCard
                         heading={<>AL <br /> SVERINGE</>}
@@ -82,7 +82,7 @@ function Team() {
                         picture={profilePicture}
                         quote='I like bananas.'
                         memberName='AL'
-                        css='col-span-6 justify-self-start mx-6 rounded-lg h-[206px] w-[400px] hover:cursor-pointer'
+                        css='lg:col-span-6 lg:justify-self-start mr-16 ml-4 lg:mx-6 rounded-lg h-[206px] w-[400px] hover:cursor-pointer'
                     />
                 </div>
             </div>

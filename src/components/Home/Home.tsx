@@ -11,10 +11,10 @@ function Home() {
         <section className='landingBg'>
             <Navigation></Navigation>
             <div className='landingWrapper'>
-                <h1 className='text-center text-5xl font-bold text text-white mb-4'>
-                    HEY THERE, WE ARE <br/> SPACECOWBOY
+                <h1 className='text-center text-3xl sm:text-5xl font-bold text text-white mb-4'>
+                    HEY THERE, WE ARE <br/> SPACECOWBOYS
                 </h1>
-                <h2 className='text-3xl font-bold text-white mb-36'>
+                <h2 className='text-xl sm:text-3xl font-bold text-white mb-36'>
                     - AN INDEPENDENT AGENCY - 
                 </h2>
                 <button 

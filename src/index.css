@@ -9,7 +9,7 @@
 }
 
 .teamBg {
-    @apply bg-[url('../src/assets/teamBg.png')] bg-no-repeat bg-cover h-screen;
+    @apply bg-[url('../src/assets/teamBg.png')] bg-no-repeat bg-cover  h-[700px] lg:h-screen;
 }
 
 /* Landing section */
@@ -22,7 +22,7 @@
 /* Facts section */
 
 .factsCard {
-    @apply border border-gray-200 bg-white rounded-md drop-shadow-2xl h-72 w-[370px] mx-6 my-6 sm:my-0 relative;
+    @apply border border-gray-200 bg-white rounded-md drop-shadow-2xl h-72 w-[370px] pb-5 sm:pb-0 sm:mx-6 my-6 sm:my-0 relative;
     @apply hover:bg-yellow-100 duration-300 ease-in hover:ease-out;
 }
 
@@ -46,10 +46,10 @@
 }
 
 .profileCardRow1 {
-    @apply col-span-1 lg:col-span-4 rounded-lg h-[206px] w-[400px] mb-12 mx-6 hover:cursor-pointer;
+    @apply lg:col-span-4 rounded-lg h-[206px] w-[400px] lg:mb-12 mr-16 ml-4 lg:mx-6 hover:cursor-pointer;
 }
 
 .cardContentWrapper {
-    @apply flex flex-row rounded-lg items-center;
+    @apply flex flex-row rounded-lg items-center w-max h-max;
     background: rgba(255, 255, 255, 0.2)
 }
