@@ -23,6 +23,7 @@
 
 .factsCard {
     @apply border border-gray-200 bg-white rounded-md drop-shadow-2xl h-72 w-[370px] mx-6 relative;
+    @apply hover:bg-yellow-100 duration-300 ease-in hover:ease-out;
 }
 
 .factsHeading {
