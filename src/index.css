@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Sectiom backgrounds */
 
 .landingBg {
     @apply bg-[url('../src/assets/landingBg.png')] bg-no-repeat bg-cover h-screen;
@@ -11,10 +12,14 @@
     @apply bg-[url('../src/assets/teamBg.png')] bg-no-repeat bg-cover h-screen;
 }
 
+/* Landing section */
+
 .landingWrapper {
     @apply h-screen flex flex-col justify-center items-center;
     background: rgba(0, 0, 0, 0.2);
 }
+
+/* Facts section */
 
 .factsCard {
     @apply border border-gray-200 bg-white rounded-md drop-shadow-2xl h-72 w-[370px] mx-6 relative;
@@ -32,7 +37,22 @@
     @apply rounded-full w-16 h-16 border border-black bg-yellow-400 flex flex-row items-center justify-center absolute top-[-32px] right-[153px];
 }
 
+/* Team section */
+
 .teamWrapper {
     @apply h-screen;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.profileCardRow1 {
+    @apply col-span-4 rounded-lg h-[206px] mb-12 mx-6;
+}
+
+.cardContentWrapper {
+    @apply flex flex-row rounded-lg items-center;
+    background: rgba(0, 0, 0, 0.1)
+}
+
+.cardText {
+    @apply text-white text-sm;
 }

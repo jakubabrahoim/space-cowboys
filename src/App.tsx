@@ -5,11 +5,12 @@ import { FaHatCowboy } from 'react-icons/fa';
 import { GoTools } from 'react-icons/go';
 import { IoMdPlanet } from 'react-icons/io';
 
+let profilePicture = require('../src/assets/profilePicture.png');
+
 function App() {
 
     function landingScroll(): void {
         let windowHeight: number = window.innerHeight;
-        //window.scrollBy({left: 0, top: windowHeight, behavior: 'smooth'});
         window.scrollTo({left: 0, top: windowHeight, behavior: 'smooth'});
     }
 
@@ -117,20 +118,70 @@ function App() {
                         </p>
                     </div>
                     <div className='grid grid-cols-12 mx-56 justify-items-center mt-12'>
-                        <div className='col-span-4 border'>
-                            Col
+                        <div className='profileCardRow1'>
+                            <div className='cardContentWrapper'>
+                                <img src={profilePicture} alt='profilePicture' className='w-[200px] rounded-lg'/>
+                                <div className='pl-6 pr-16'>
+                                    <h3 className='text-white text-lg font-bold mb-2'>RICHIE <br/> FARHEM</h3>
+                                    <p className='cardText'>
+                                        ENGINEER <br/><br/>
+                                        AGE: 48 <br/>
+                                        MISSIONS: 13
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div className='col-span-4 border'>
-                            Col
+                        <div className='profileCardRow1'>
+                            <div className='cardContentWrapper'>
+                                <img src={profilePicture} alt='profilePicture' className='w-[200px] rounded-lg'/>
+                                <div className='pl-6 pr-16'>
+                                    <h3 className='text-white text-lg font-bold mb-2'>RICHIE <br/> FARHEM</h3>
+                                    <p className='cardText'>
+                                        ENGINEER <br/><br/>
+                                        AGE: 48 <br/>
+                                        MISSIONS: 13
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div className='col-span-4 border'>
-                            Col
+                        <div className='profileCardRow1'>
+                            <div className='cardContentWrapper'>
+                                <img src={profilePicture} alt='profilePicture' className='w-[200px] rounded-lg'/>
+                                <div className='pl-6 pr-16'>
+                                    <h3 className='text-white text-lg font-bold mb-2'>JOHN SIRACHA</h3>
+                                    <p className='cardText'>
+                                        GUNSLINGER <br/><br/>
+                                        AGE: 47 <br/>
+                                        MISSIONS: 13
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div className='col-span-6 border'>
-                            Col
+                        <div className='col-span-6 justify-self-end mx-6 rounded-lg h-[206px]'>
+                            <div className='cardContentWrapper'>
+                                <img src={profilePicture} alt='profilePicture' className='w-[200px] rounded-lg'/>
+                                <div className='pl-6 pr-16'>
+                                    <h3 className='text-white text-lg font-bold mb-2'>RICHIE FARHEM</h3>
+                                    <p className='cardText'>
+                                        CAPTAIN <br/><br/>
+                                        AGE: 71 <br/>
+                                        MISSIONS: 13
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div className='col-span-6 border'>
-                            Col
+                        <div className='col-span-6 justify-self-start mx-6 rounded-lg h-[206px]'>
+                            <div className='cardContentWrapper'>
+                                <img src={profilePicture} alt='profilePicture' className='w-[200px] rounded-lg'/>
+                                <div className='pl-6 pr-16'>
+                                    <h3 className='text-white text-lg font-bold mb-2'>RICHIE FARHEM</h3>
+                                    <p className='cardText'>
+                                        CEO <br/><br/>
+                                        AGE: 76 <br/>
+                                        MISSIONS: 13
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
