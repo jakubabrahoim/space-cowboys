@@ -12,15 +12,15 @@ function Navigation() {
     return (
         <div className='flex flex-row items-center h-12 sticky top-0 z-10'>
             <div className='basis-1/6 flex justify-start'>
-                <IconContext.Provider value={{ className: 'text-white h-8 w-8 ml-36' }}>
+                <IconContext.Provider value={{ className: 'text-white h-8 w-8 ml-6 md:ml-12 lg:ml-36' }}>
                     <IoIosRocket />
                 </IconContext.Provider> &nbsp;
             </div>
-            <div className='basis-5/6 flex justify-end mr-36'>
-                <button className='mx-6 text-white font-bold' onClick={() => scrollToSection(1)}>ABOUT US</button>
-                <button className='mx-6 text-white font-bold' onClick={() => scrollToSection(2)}>THE TEAM</button>
-                <button className='mx-6 text-white font-bold' onClick={() => scrollToSection(3)}>IMPRESSIONS</button>
-                <button className='mx-6 text-white font-bold' onClick={() => scrollToSection(4)}>CONTACT</button>
+            <div className='basis-5/6 flex justify-end mr-6 md:mr-12 lg:mr-36'>
+                <button className='md:mx-6 mx-2 text-white font-bold' onClick={() => scrollToSection(1)}>ABOUT US</button>
+                <button className='md:mx-6 mx-2 text-white font-bold' onClick={() => scrollToSection(2)}>THE TEAM</button>
+                <button className='md:mx-6 mx-2 text-white font-bold' onClick={() => scrollToSection(3)}>IMPRESSIONS</button>
+                <button className='md:mx-6 mx-2 text-white font-bold' onClick={() => scrollToSection(4)}>CONTACT</button>
             </div>
         </div>
     )

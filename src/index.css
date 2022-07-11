@@ -22,7 +22,7 @@
 /* Facts section */
 
 .factsCard {
-    @apply border border-gray-200 bg-white rounded-md drop-shadow-2xl h-72 w-[370px] mx-6 relative;
+    @apply border border-gray-200 bg-white rounded-md drop-shadow-2xl h-72 w-[370px] mx-6 sm:my-6 relative;
     @apply hover:bg-yellow-100 duration-300 ease-in hover:ease-out;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .factsIconWrapper {
-    @apply rounded-full w-16 h-16 border border-black bg-yellow-400 flex flex-row items-center justify-center absolute top-[-32px] right-[153px];
+    @apply rounded-full w-16 h-16 bg-yellow-400 flex flex-row items-center justify-center absolute top-[-32px] right-[153px];
 }
 
 /* Team section */
