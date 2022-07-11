@@ -24,6 +24,8 @@ function Team() {
                             </>
                         }
                         picture={profilePicture}
+                        quote='I like hotdogs.'
+                        memberName='RICHIE'
                         css='profileCardRow1'
                     />
                     <MemberCard
@@ -36,6 +38,8 @@ function Team() {
                             </>
                         }
                         picture={profilePicture}
+                        quote='I like hotdogs.'
+                        memberName='RICHIE'
                         css='profileCardRow1'
                     />
                     <MemberCard
@@ -48,6 +52,8 @@ function Team() {
                             </>
                         }
                         picture={profilePicture}
+                        quote='I like pizza.'
+                        memberName='JOHN'
                         css='profileCardRow1'
                     />
                     <MemberCard
@@ -60,7 +66,9 @@ function Team() {
                         </>
                         }
                         picture={profilePicture}
-                        css='col-span-6 justify-self-end mx-6 rounded-lg h-[206px]'
+                        quote='I like apples.'
+                        memberName='BERT'
+                        css='col-span-6 justify-self-end mx-6 rounded-lg h-[206px] w-[400px] hover:cursor-pointer'
                     />
                     <MemberCard
                         heading={<>AL <br /> SVERINGE</>}
@@ -72,7 +80,9 @@ function Team() {
                         </>
                         }
                         picture={profilePicture}
-                        css='col-span-6 justify-self-start mx-6 rounded-lg h-[206px]'
+                        quote='I like bananas.'
+                        memberName='AL'
+                        css='col-span-6 justify-self-start mx-6 rounded-lg h-[206px] w-[400px] hover:cursor-pointer'
                     />
                 </div>
             </div>

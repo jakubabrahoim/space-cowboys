@@ -45,14 +45,10 @@
 }
 
 .profileCardRow1 {
-    @apply col-span-4 rounded-lg h-[206px] mb-12 mx-6;
+    @apply col-span-4 rounded-lg h-[206px] w-[400px] mb-12 mx-6 hover:cursor-pointer;
 }
 
 .cardContentWrapper {
     @apply flex flex-row rounded-lg items-center;
     background: rgba(255, 255, 255, 0.2)
-}
-
-.cardText {
-    @apply text-white text-sm;
 }
