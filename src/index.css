@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.landingBg {
+    @apply bg-[url('../src/assets/backgroundImage.png')] bg-no-repeat bg-cover h-screen;
+}
+
+.teamBg {
+    @apply bg-[url('../src/assets/teamBg.png')] bg-no-repeat bg-cover h-screen;
+}
+
+.factsCard {
+    @apply border border-gray-200 bg-white rounded-md drop-shadow-2xl h-72 w-[370px] mx-6 relative;
+}
+
+.factsHeading {
+    @apply text-2xl text-center font-bold text-black mt-12 mb-6;
+}
+
+.factsText {
+    @apply text-gray-700 text-center;
+}
+
+.factsIconWrapper {
+    @apply rounded-full w-16 h-16 border border-black bg-yellow-400 flex flex-row items-center justify-center absolute top-[-32px] right-[153px];
+}
