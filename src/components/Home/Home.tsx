@@ -1,3 +1,5 @@
+import Navigation from '../Navigation/Navigation';
+
 function Home() {
     
     function landingScroll(): void {
@@ -7,6 +9,7 @@ function Home() {
     
     return (
         <section className='landingBg'>
+            <Navigation></Navigation>
             <div className='landingWrapper'>
                 <h1 className='text-center text-5xl font-bold text text-white mb-4'>
                     HEY THERE, WE ARE <br/> SPACECOWBOY
