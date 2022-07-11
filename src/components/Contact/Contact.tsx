@@ -6,7 +6,7 @@ import { IoIosRocket } from "react-icons/io";
 function Contact() {
 
     type FormField = {firstName: string, lastName: string}
-    let [formValidation, setFormValidation] = useState<FormField>({firstName: 'valid', lastName: 'valid'});
+    let [formValidation, setFormValidation] = useState<FormField>({firstName: '', lastName: ''});
     let [formSubmitted, setFormSubmitted] = useState<boolean>(false);
     
     function submitForm(event: any): void {
@@ -57,7 +57,7 @@ function Contact() {
                 <form className='grid grid-cols-1 md:grid-cols-2 items-center justify-items-center mt-12' onSubmit={submitForm}>
                     <div className='flex flex-col mx-4'>
                         <span id='firstNameLabel' hidden>First Name</span>
-                        <span className='text-red-500 text-xs mb-2' hidden={formValidation.firstName === 'valid'}>First Name can contain only letters.</span>
+                        <span className='text-red-500 text-xs mb-2' hidden={formValidation.firstName === 'valid' || formValidation.firstName === ''}>First Name can contain only letters.</span>
                         <input
                             type='text'
                             name='firstName'
@@ -65,12 +65,13 @@ function Contact() {
                             aria-labelledby='firstNameLabel'
                             className={
                                 `text-sm mb-4 rounded-md h-10 w-64 pl-2 outline outline-1 outline-gray-100 border border-gray-100 
-                                ${formValidation.firstName === 'invalid' && 'text-red-500 border-red-500'}`
+                                ${formValidation.firstName === 'invalid' && 'text-red-500 border-red-500'}
+                                ${formSubmitted === true && 'text-green-500 border-green-500'}`
                             }
                             required
                         />
                         <span id='lastNameLabel' hidden>Last Name</span>
-                        <span className='text-red-500 text-xs mb-2' hidden={formValidation.lastName === 'valid'}>First Name can contain only letters.</span>
+                        <span className='text-red-500 text-xs mb-2' hidden={formValidation.lastName === 'valid' || formValidation.lastName === ''}>First Name can contain only letters.</span>
                         <input
                             type='text'
                             name='lastName'
@@ -78,7 +79,8 @@ function Contact() {
                             aria-labelledby='lastNameLabel'
                             className={
                                 `text-sm mb-4 rounded-md h-10 w-64 pl-2 outline outline-1 outline-gray-100 border border-gray-100 
-                                ${formValidation.lastName === 'invalid' && 'text-red-500 border-red-500'}`
+                                ${formValidation.lastName === 'invalid' && 'text-red-500 border-red-500'}
+                                ${formSubmitted === true && 'text-green-500 border-green-500'}`
                             }
                             required
                         />
@@ -88,7 +90,10 @@ function Contact() {
                             name='email'
                             placeholder='E-Mail'
                             aria-labelledby='emailLabel'
-                            className='text-sm mb-4 rounded-md h-10 w-64 pl-2 outline outline-1 outline-gray-100 border border-gray-100'
+                            className={
+                                `text-sm mb-4 rounded-md h-10 w-64 pl-2 outline outline-1 outline-gray-100 border border-gray-100
+                                ${formSubmitted === true && 'text-green-500 border-green-500'}`
+                            }
                             required
                         />
                     </div>
