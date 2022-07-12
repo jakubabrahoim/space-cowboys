@@ -14,7 +14,7 @@ function App() {
             <Team></Team>
 
             {/* GALLERY PAGE */}
-            <section className='bg-pink-300 h-screen'>
+            <section id='impressions' className='bg-pink-300 h-screen'>
 
             </section>
             <Contact></Contact>

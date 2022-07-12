@@ -46,7 +46,7 @@ function Contact() {
     }
     
     return (
-        <section className='bg-gray-300 h-screen'>
+        <section id='contact' className='bg-gray-300 h-screen'>
             <div className='flex flex-col items-center h-9/10'>
                 <h2 className='text-3xl font-bold text-black mt-12'>SAY HELLO</h2>
                 <p className='text-gray-700 text-center mt-4 px-6 md:px-0'>

@@ -15,7 +15,7 @@ function Team() {
     }
     
     return (
-        <section className='teamBg'>
+        <section id='team' className='teamBg'>
             <div className='teamWrapper'>
                 <div className='flex flex-col items-center'>
                     <h2 className='text-3xl font-bold text-white mt-12'>THE TEAM</h2>
