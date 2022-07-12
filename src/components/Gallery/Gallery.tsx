@@ -32,7 +32,7 @@ function Gallery() {
                             src={image} 
                             alt='galaxy' 
                             onClick={() => openLightbox(index + 1)} 
-                            className='w-[90px] sm:w-[150px] md:w-[200px] lg:w-[250px] xl:w-[300px] mx-4 my-4 aspect-square object-cover'
+                            className='hover:cursor-pointer w-[90px] sm:w-[150px] md:w-[200px] lg:w-[250px] xl:w-[300px] mx-4 my-4 aspect-square object-cover'
                         />
                     );
                 })}
