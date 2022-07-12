@@ -111,6 +111,8 @@ function Contact() {
                             value='SEND THAT MAIL'
                             className='font-bold text-black text-lg bg-yellow-300 rounded-md px-8 md:px-16 py-4 hover:cursor-pointer'
                         /> <br/>
+                    </div>
+                    <div className='col-span-1 md:col-span-2 mt-4'>
                         <span className='text-xs font-bold text-green-500 px-16' hidden={formSubmitted === false}>Form submitted successfuly</span>
                     </div>
 
