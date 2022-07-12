@@ -46,7 +46,7 @@
 }
 
 .profileCardRow1 {
-    @apply lg:col-span-4 rounded-lg h-[206px] w-[400px] lg:mb-12 mr-16 ml-4 lg:mx-6 hover:cursor-pointer;
+    @apply lg:col-span-4 rounded-lg h-[206px] w-[400px] snap-center sm:snap-none lg:mb-12 mr-16 ml-4 lg:mx-6 hover:cursor-pointer;
 }
 
 .cardContentWrapper {

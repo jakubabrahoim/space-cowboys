@@ -24,7 +24,7 @@ function Team() {
                         Click on the pictures to get some more information!
                     </p>
                 </div>
-                <div id='memberCards' className='flex flex-row overflow-x-auto lg:grid lg:grid-cols-12 lg:mx-56 justify-items-center mt-24 lg:mt-12'>
+                <div id='memberCards' className='flex flex-row overflow-x-auto snap-x sm:snap-none lg:grid lg:grid-cols-12 lg:mx-56 justify-items-center mt-24 lg:mt-12'>
                     <MemberCard
                         heading={<>RICHIE <br /> FARHEM</>}
                         text={
@@ -79,7 +79,7 @@ function Team() {
                         picture={profilePicture}
                         quote='I like apples.'
                         memberName='BERT'
-                        css='lg:col-span-6 lg:justify-self-end mr-16 ml-4 lg:mx-6 rounded-lg h-[206px] w-[400px] hover:cursor-pointer'
+                        css='lg:col-span-6 lg:justify-self-end mr-16 ml-4 snap-center sm:snap-none lg:mx-6 rounded-lg h-[206px] w-[400px] hover:cursor-pointer'
                     />
                     <MemberCard
                         heading={<>AL <br /> SVERINGE</>}
@@ -93,7 +93,7 @@ function Team() {
                         picture={profilePicture}
                         quote='I like bananas.'
                         memberName='AL'
-                        css='lg:col-span-6 lg:justify-self-start mr-16 ml-4 lg:mx-6 rounded-lg h-[206px] w-[400px] hover:cursor-pointer'
+                        css='lg:col-span-6 lg:justify-self-start mr-16 ml-4 snap-center sm:snap-none lg:mx-6 rounded-lg h-[206px] w-[400px] hover:cursor-pointer'
                     />
                 </div>
                 <div className='flex flex-row w-screen mt-4 sm:hidden'>

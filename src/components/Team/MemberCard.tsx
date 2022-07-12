@@ -33,7 +33,7 @@ function MemberCard({ heading, text, picture, quote, memberName, css }: Card) {
             }
             {
                 cardSide === 'back' &&
-                <div className='flex flex-col rounded-lg h-full w-max px-24 lg:px-0 items-center justify-center bg-gray-800'>
+                <div className='flex flex-col rounded-lg h-full w-max  px-24  items-center justify-center bg-gray-800'>
                     <p className="text-gray-400 text-xs">{memberName}'S FAMOUSE QUOTE:</p>
                     <p className='text-white text-2xl italic mt-12'>
                         "{quote}"
